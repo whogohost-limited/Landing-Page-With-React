@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  font-family: 'Karla', sans-serif;
+}
+
 
 body {
   margin: 0;
@@ -5,7 +11,13 @@ body {
   box-sizing: border-box;
 }
 
-/* New custom styles*/
+/* Layout  */
+.container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+
 .Blue-color {
   color: #0088ce;
 }
