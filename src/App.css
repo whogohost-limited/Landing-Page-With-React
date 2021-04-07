@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* New custom styles*/
+.Blue-color {
+  color: #0088ce;
+}
+
+.Flex {
+  display: flex;
+}
+
+.Space-between {
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  padding-right: 0.8rem;
+}
+
