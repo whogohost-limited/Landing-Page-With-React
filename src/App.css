@@ -11,23 +11,8 @@ body {
   box-sizing: border-box;
 }
 
-/* Layout  */
-.container {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-
-.Blue-color {
-  color: #0088ce;
-}
-
-.Flex {
-  display: flex;
-}
-
-.Space-between {
-  justify-content: space-between;
+a {
+  text-decoration: none;
 }
 
 li {
@@ -35,3 +20,60 @@ li {
   padding-right: 0.8rem;
 }
 
+/* Layout  */
+.container {
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
+}
+
+.white-text {
+  color: #FFF !important;
+}
+
+
+.blue-color {
+  color: #0088ce !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.menu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-items li a{
+  color: rgb(31, 41, 55);
+}
+
+.menu-items li:hover {
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: #ccc;
+}
+
+
+.btn.blue-dark {
+  background: rgb(0, 0, 90);
+  color: white;
+  border-radius: 5px 5px 5px 0px;
+}
+
+
+
+@media screen and (min-width: 960px) {
+
+  .menu-items li {
+    padding: 1rem 2rem;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+}
