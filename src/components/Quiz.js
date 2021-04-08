@@ -8,7 +8,7 @@ import QuestionFive from './Q5'
 
 function Quiz() {
     return(
-        <div className="container py-4">
+        <div className="py-4">
             <QuestionOne /> 
             <QuestionTwo />
             <QuestionThree />
