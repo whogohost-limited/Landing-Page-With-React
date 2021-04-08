@@ -1,9 +1,10 @@
 import React from 'react';
+import Hero from './Hero'
 
 function MainBody() {
     return(
         <div>
-            <p className="Blue-color">This is the main body</p>
+            <Hero />
         </div>
     )
 }

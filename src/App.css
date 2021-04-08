@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #0088ce;
+  --bg-primary: #E8F8FF;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 * {
@@ -30,13 +35,21 @@ li {
   color: #FFF !important;
 }
 
-
 .blue-color {
-  color: #0088ce !important;
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background: var(--bg-primary);
 }
 
 .flex {
   display: flex;
+}
+
+.flex.center {
+  justify-content: center;
+  align-items: center;
 }
 
 .space-between {
@@ -60,12 +73,15 @@ li {
 
 
 .btn.blue-dark {
-  background: rgb(0, 0, 90);
+  background: var(--primary-color);
   color: white;
   border-radius: 5px 5px 5px 0px;
 }
 
-
+/* Utility classes */
+.rounded {
+  border-radius: 11px;
+}
 
 @media screen and (min-width: 960px) {
 
@@ -74,6 +90,11 @@ li {
     font-weight: 800;
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .hero-image {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
 }

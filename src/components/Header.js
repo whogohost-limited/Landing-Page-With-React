@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return(
-        <div className="menu flex space-between">
+        <div className="container menu flex space-between">
             <li className="float-right"><a href="#">Logo</a></li>
             <nav className="menu-items flex">
                 <li><a href="#">Save</a></li>
