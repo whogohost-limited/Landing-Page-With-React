@@ -78,8 +78,8 @@ h1.hero-title {
   padding-bottom: 5rem;
 }
 
-.grid {
-  display: grid;
+.grid-1x4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .flex {
