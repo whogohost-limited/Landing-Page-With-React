@@ -1,9 +1,14 @@
 import React from 'react'
+import logo from './logo.png'
 
 function Header() {
     return(
-        <div className="container menu flex space-between">
-            <li className="float-right"><a href="#">Logo</a></li>
+        <div className="container menu flex space-between v-center">
+            <li className="float-right">
+                <a href="#">
+                    <img src={logo} alt="logo" />
+                </a>
+            </li>
             <nav className="menu-items flex">
                 <li><a href="#">Save</a></li>
                 <li><a href="#">Invest</a></li>

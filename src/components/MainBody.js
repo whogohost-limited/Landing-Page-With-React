@@ -7,7 +7,7 @@ function MainBody() {
     return(
         <div>
             <Hero />
-            <div className="container grid grid-3x2">
+            <div className="grid grid-3x2">
                 <Quiz />
                 <Sidebar />
             </div>

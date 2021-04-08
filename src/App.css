@@ -75,6 +75,7 @@ h1.hero-title {
 
 .grid-3x2 {
   grid-template-columns: 3fr 2fr;
+  padding-bottom: 5rem;
 }
 
 .grid {
@@ -96,6 +97,10 @@ h1.hero-title {
 
 .space-between {
   justify-content: space-between;
+}
+
+.flex.v-center {
+  align-items: center;
 }
 
 
