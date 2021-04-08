@@ -10,7 +10,7 @@ function Header() {
                 <li><a href="#">Stories</a></li>
                 <li><a href="#">FAQs</a></li>
                 <li><a href="#">Login</a></li>
-                <li className="btn blue-dark white-text"><a href="#">Create a Free Account</a></li>
+                <li className="btn blue-dark"><a href="#" className="white-text">Create a Free Account</a></li>
             </nav>
         </div>
     )
