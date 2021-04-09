@@ -1,4 +1,4 @@
-import Reac from 'react'
+import React from 'react'
 
 function FooterItem(props) {
     return(
@@ -6,7 +6,7 @@ function FooterItem(props) {
         <div>
             <ul className="footer-menu">
                 <li>
-                    <a href="">{props.col.title}</a>
+                    <a className="title">{props.col.title}</a>
                 </li>
                 <li>
                     <a href="">{props.col.menuItemOne}</a>

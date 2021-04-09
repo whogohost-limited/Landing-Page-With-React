@@ -2,6 +2,7 @@
   --primary-color: #0088ce;
   --button-color: #083E9E;
   --bg-primary: #E8F8FF;
+  --bg-footer: #062863;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
@@ -59,6 +60,10 @@ h1.hero-title {
 
 .bg-grey {
   background-color: #E5E7EB;
+}
+
+.bg-footer {
+  background: var(--bg-footer);
 }
 
 
@@ -192,15 +197,6 @@ h1.hero-title {
   height: auto;
 }
 
-.menu {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.menu-items li a{
-  color: rgb(31, 41, 55);
-}
-
 .menu-items li:hover {
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -241,6 +237,45 @@ h2.hero-title {
     border-radius: 17px 17px 17px 0;
 }
 
+.menu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-items li a{
+  color: rgb(31, 41, 55);
+}
+
+.menu-row {
+  padding-top: 5rem;
+}
+
+.menu-row:last-child {
+  text-align: end;
+  padding-right: 3rem;
+}
+
+.blue-text {
+  color: rgb(95 140 219);
+}
+
+ul.footer-menu li a {
+  color: rgb(95 140 219);
+}
+
+ul.footer-menu li a.title {
+  color: #FFF;
+  font-weight: 700;
+}
+
+ul.footer-menu li {
+  margin-bottom: 14px;
+}
+
+.copyright-menu {
+  padding: 5rem 0 3rem;
+}
+
 @media screen and (min-width: 960px) {
 
   .menu-items li {
@@ -268,6 +303,10 @@ h2.hero-title {
     padding-bottom: 1rem;
     background-color: #F3F3F3;
     margin-bottom: 5px;
+  }
+
+  .btn {
+      cursor: pointer;
   }
 
 }
