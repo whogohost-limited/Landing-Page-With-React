@@ -6,10 +6,10 @@ function Footer() {
     return(
         <div className="bg-footer">
             <div className="grid grid-1x4 menu-row">
-                <FooterItem col = {{ title: "Quick Links", menuItemOne: "Domains", menuItemTwo: "Hosting", menuItemFour: "Websites", menuItemFive: "More"}} />
+                <FooterItem col = {{ title: "Quick Links", menuItemOne: "Domains", menuItemTwo: "Hosting", menuItemThree: "Products", menuItemFour: "Websites", menuItemFive: "More"}} />
                 <FooterItem col = {{ title: "Packages", menuItemOne: "Affiliates", menuItemTwo: "Reseller", menuItemFour: "Enterprise"}} />
                 <FooterItem col = {{ title: "Legal", menuItemOne: "Terms of Service", menuItemTwo: "Poilicy"}} />
-                <FooterItem col = {{ title: "Company", menuItemOne: "Whogohost is a Web hosting company that specializes in all things web"}} />
+                <FooterItem col = {{ title: "Company", menuItemOne: "3A Olumuyiwa St. Omole", menuItemTwo: "0987654321", menuItemThree: "info@whogohost.com"}} />
             </div>
             <Copyright />
         </div>
