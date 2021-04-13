@@ -4,6 +4,7 @@ import logo from './logo.png'
 function Header() {
     return(
         <div className="container menu flex space-between v-center">
+
             <li className="float-right">
                 <a href="#">
                     <img src={logo} alt="logo" />
@@ -17,6 +18,13 @@ function Header() {
                 <li><a href="#">Login</a></li>
                 <li className="btn blue-dark"><a href="#" className="white-text">Create a Free Account</a></li>
             </nav>
+
+            <nav className="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
         </div>
     )
 }
