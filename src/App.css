@@ -324,11 +324,18 @@ ul.quiz li {
   nav.menu-items.flex {
       display: none;
   }
+  
+  nav.mobile-menu {
+    position: relative;
+  }
 
   nav.mobile-menu span {
     position: absolute;
     top: 0;
     right: 0;
+    padding: 2px;
+    width: 15px;
+    background: black;
 }
 
   .grid-1x4 {

@@ -3,6 +3,22 @@ import logo from './logo.png'
 
 class Header extends React.Component {
 
+    constructor(props){
+        super(props)
+
+        this.state = {
+            menuIsOpen: false,
+        }
+    }
+
+    handleMenuClick() {
+        this.setState({menuIsOpen:!this.state.menuIsOpen})
+    }
+
+    handleLinkClick() {
+        this.setState({menuIsOpen:false})
+    }
+
     render() {
 
         return(
@@ -22,7 +38,7 @@ class Header extends React.Component {
                     <li className="btn blue-dark"><a href="#" className="white-text">Create a Free Account</a></li>
                 </nav>
     
-                <nav className="mobile-menu">
+                <nav className="mobile-menu" open={this.state.menuIsOpen} onClick={() => this.handleMenuClick()}>
                     <span></span>
                     <span></span>
                     <span></span>
