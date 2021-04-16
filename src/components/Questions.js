@@ -3,36 +3,56 @@ import React from 'react'
 class Questions extends React.Component {
 
     constructor() {
-        super();    
-        this.state = { checked: false };
+        super()    
+        this.state = { checked: false }
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange() {
+        this.setState({
+            checked: !this.state.checked
+        })
     }
 
     render() {
 
-        return(
+        const result = this.state.checked ? '' : 'hidden'
 
-                <ul className="quiz">
+        return(
+            <div className="container">
+
                 <h4 className="label mb-4">{this.props.question.title}</h4>
 
-                <form>
-        
-                    <li>
-                    <input type="radio" name="answer" value={this.state.answer}/>
-                    <label>{this.props.question.optionOne}</label>
-                    </li>
+                <ul className="quiz pl-0">
 
-                    <li>
-                    <input type="radio" name="answer" />
-                    <label>{this.props.question.optionTwo}</label>
-                    </li>
+                    <form>
+                        <div>
+                            <label>
+                                <input type="radio" name="answer" />
+                                {this.props.question.optionOne}
+                            </label>
+                        </div>
+            
+                        <div>
+                            <label>
+                                <input type="radio" name="answer" />                            
+                                {this.props.question.optionTwo}
+                            </label>
+                        </div>
 
-                    <li><input type="radio" name="answer"/>
-                    <label>{this.props.question.optionThree}</label>
-                    </li>
+                        <div>
+                            <label>
+                            <input type="radio" name="answer"/>
+                            {this.props.question.optionThree}
+                            </label>
+                        </div>
 
-                </form>
+
+                    </form>
 
                 </ul>
+
+            </div>
 
         ) 
     }

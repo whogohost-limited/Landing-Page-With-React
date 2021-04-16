@@ -66,6 +66,10 @@ h1.hero-title {
   background-color: #E5E7EB;
 }
 
+.bg-accent {
+  background: #E8F8FF;
+}
+
 .bg-footer {
   background: var(--bg-footer);
 }
@@ -123,6 +127,10 @@ h1.hero-title {
   font-weight: 700;
 }
 
+.pl-0 {
+  padding-left: 0;
+}
+
 .p-1 {
   padding: 0.2rem;
 }
@@ -142,6 +150,32 @@ h1.hero-title {
 .p-5 {
   padding: 1.5rem;
 }
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.2rem;
+}
+
+.mt-2 {
+  margin-top: 0.4rem;
+}
+
+.mt-3 {
+  margin-top: 0.8rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.5rem;
+}
+
+
 
 .mb-0 {
   margin-bottom: 0;
@@ -196,9 +230,17 @@ h1.hero-title {
   padding-top: 5rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .max-width {
   max-width: 100%;
   height: auto;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .menu-items li:hover {
@@ -222,7 +264,7 @@ ul.quiz {
 }
 
 
-ul.quiz li input {
+ul.quiz input {
   margin-right: 1rem !important;
   margin-left: 0.8rem;
 }
@@ -279,7 +321,7 @@ ul.footer-menu li {
   padding: 5rem 0 3rem;
 }
 
-ul.quiz li {
+ul.quiz div {
   font-size: 1.125rem;
   line-height: 1.75rem;
   border-radius: 7px 7px 7px 0;
@@ -291,6 +333,23 @@ ul.quiz li {
 
 .btn {
     cursor: pointer;
+}
+
+/* Result */
+.result-title {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #062863;
+}
+
+.result-img {
+  border-radius: 1rem;
+}
+
+.result p {
+  font-size: 1rem;
+  margin-bottom: 21px;
 }
 
 @media screen and (min-width: 961px) {
