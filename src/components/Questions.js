@@ -1,27 +1,8 @@
-import React from 'react'
+const Questions = ({question}) => {
+    return (
+        <div className="container">
 
-class Questions extends React.Component {
-
-    constructor() {
-        super()    
-        this.state = { checked: false }
-        this.handleChange = this.handleChange.bind(this)
-    }
-
-    handleChange() {
-        this.setState({
-            checked: !this.state.checked
-        })
-    }
-
-    render() {
-
-        const result = this.state.checked ? '' : 'hidden'
-
-        return(
-            <div className="container">
-
-                <h4 className="label mb-4">{this.props.question.title}</h4>
+                <h4 className="label mb-4">{question.title}</h4>
 
                 <ul className="quiz pl-0">
 
@@ -29,21 +10,21 @@ class Questions extends React.Component {
                         <div>
                             <label>
                                 <input type="radio" name="answer" />
-                                {this.props.question.optionOne}
+                                {question.optionOne}
                             </label>
                         </div>
-            
+        
                         <div>
                             <label>
                                 <input type="radio" name="answer" />                            
-                                {this.props.question.optionTwo}
+                                {question.optionTwo}
                             </label>
                         </div>
 
                         <div>
                             <label>
                             <input type="radio" name="answer"/>
-                            {this.props.question.optionThree}
+                            {question.optionThree}
                             </label>
                         </div>
 
@@ -53,8 +34,7 @@ class Questions extends React.Component {
                 </ul>
 
             </div>
-
-        ) 
-    }
+    )
 }
-export default Questions 
+
+export default Questions

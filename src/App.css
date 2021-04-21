@@ -116,6 +116,24 @@ h1.hero-title {
   align-items: center;
 }
 
+.social {
+  color: white;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.facebook {
+  background: #3B5998;
+}
+
+.twitter {
+  background: #55ACEE;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
 
 
 /* Utility classes */

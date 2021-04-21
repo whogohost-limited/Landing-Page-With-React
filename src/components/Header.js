@@ -1,28 +1,8 @@
-import React from 'react'
 import logo from './logo.png'
 
-class Header extends React.Component {
-
-    constructor(props){
-        super(props)
-
-        this.state = {
-            menuIsOpen: false,
-        }
-    }
-
-    handleMenuClick() {
-        this.setState({menuIsOpen:!this.state.menuIsOpen})
-    }
-
-    handleLinkClick() {
-        this.setState({menuIsOpen:false})
-    }
-
-    render() {
-
-        return(
-            <div className="container menu flex space-between v-center">
+const Header = () => {
+    return (
+        <div className="container menu flex space-between v-center">
     
                 <li className="float-right">
                     <a href="#">
@@ -38,16 +18,14 @@ class Header extends React.Component {
                     <li className="btn blue-dark"><a href="#" className="white-text">Create a Free Account</a></li>
                 </nav>
     
-                <nav className="mobile-menu" open={this.state.menuIsOpen} onClick={() => this.handleMenuClick()}>
+                <nav className="mobile-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </nav>
     
             </div>
-        )
-        
-    }
+    )
 }
 
 export default Header
